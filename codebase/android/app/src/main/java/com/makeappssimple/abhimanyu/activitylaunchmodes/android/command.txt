@@ -1,0 +1,3 @@
+Command to view all activities
+
+adb shell dumpsys activity activities | grep -i run

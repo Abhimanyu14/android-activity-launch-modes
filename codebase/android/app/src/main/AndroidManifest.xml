@@ -11,6 +11,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ActivityLaunchModes"
         tools:ignore="AllowBackup">
+
+        <activity
+            android:name=".Activity1"
+            android:launchMode="standard"/>
+        <activity
+            android:name=".Activity2"
+            android:launchMode="singleTop"/>
+        <activity
+            android:name=".Activity3"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".Activity4"
+            android:launchMode="singleInstance"/>
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

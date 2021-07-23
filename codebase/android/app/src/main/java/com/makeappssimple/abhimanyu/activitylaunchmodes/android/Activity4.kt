@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import com.makeappssimple.abhimanyu.activitylaunchmodes.android.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity() {
+class Activity4 : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
 
@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.textviewActivityMainActivityName.text = "Main Activity"
+        binding.textviewActivityMainActivityName.text = "Activity 4"
 
         binding.buttonActivityMainActivity1.setOnClickListener {
             val intent = Intent(this, Activity1::class.java)
@@ -37,6 +37,6 @@ class MainActivity : AppCompatActivity() {
 
     override fun onNewIntent(intent: Intent?) {
         super.onNewIntent(intent)
-        Log.e("Abhi", "onNewIntent: Activity Main")
+        Log.e("Abhi", "onNewIntent: Activity 4")
     }
 }
